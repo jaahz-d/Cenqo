@@ -1,17 +1,5 @@
 let ctx = document.getElementById('conversion-chart');
 
-/* function getGradient(context){
-  let chartArea = context.chart.chartArea;
-  let x = (chartArea.left + chartArea.right / 2);
-  let y1 = chartArea.top;
-  let y2 = chartArea.bottom;
-  let gradient = ctx.createLinearGradient(x, y1, x, y2);
-  gradient.addColorStop(0, 'rgb(255, 255, 255)');
-  gradient.addColorStop(1, 'rgb(230, 244, 241');
-
-  return gradient;
-} */
-
 var chart = new Chart(ctx, {
     type: 'line',
     data: {
