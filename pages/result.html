@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+   <head>      
+       <meta charset="utf-8"/>
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <title>Cenqo - homepage</title>
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Righteous&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="../styles/main.css">
+  
+   </head>
+   <body>
+        <div class="container container--result">
+            <div class="navbar">
+                <h3>Cenqo</h3>
+				<ul>				  
+				  <li>Home</li>
+				  <li>Converter</li>
+				  <li>Currency Exchange</li>
+	     		</ul>	
+			</div>
+
+            <div class="page-wrapper">
+                <div class="content-wrapper">
+                    <div class="breadcrumb">
+                        <ul>				  
+                            <li>Home <span class="chevron-left">></span></li>
+                            <li>Converter <span class="chevron-left">></span></li>
+                            <li>USD <span class="chevron-left">></span></li>
+                            <li class="active">Conversion Result</li>
+                         </ul>	
+                    </div>
+                    <div class="form-wrapper">  
+                        <div class="form"> 
+                           <h4 class="section-title">Your conversion result</h4>
+                           <div class="from conversion">
+                               <h1>1000.00</h1>
+                               <p>United States Dollar</p>
+                           </div>
+                           <h3>=</h3>
+                           <div class="to conversion">
+                               <h1>846.25</h1>
+                               <p>Euro</p>
+                           </div>
+                        </div>
+                   
+                        <div class="panel">
+                          <p class="currency" id="from-currency">1 USD equals</p>
+                          <h1>0.85</h1>
+                          <p class="currency" id="to-currency">EUR</p>
+                        </div>
+                    </div>  
+                    
+                    <div class="chart">
+                        <h4 class="section-title">USD-EUR Conversion History</h4>
+                        <canvas id="conversion-chart"></canvas>
+                    </div>
+    
+                    <div class="table">
+                        <h4 class="section-title">USD <span><img src="../assets/swap-outline.svg"></span> EUR Conversion Table</h4>
+                        <table>
+                            <thead>
+                                <th>USD</th>
+                                <th>></th>
+                                <th>EUR</th>
+                                <th>EUR</th>
+                                <th>></th>
+                                <th>USD</th>
+                            </thead>                     
+    
+                            <tr>
+                                <td>$1</td>
+                                <td>=</td>
+                                <td>E0.85</td>
+                                <td>E1</td>
+                                <td>=</td>
+                                <td>$1.18</td>
+                            </tr>
+                            <tr>
+                                <td>$1</td>
+                                <td>=</td>
+                                <td>E0.85</td>
+                                <td>E1</td>
+                                <td>=</td>
+                                <td>$1.18</td>
+                            </tr>
+                            <tr>
+                                <td>$1</td>
+                                <td>=</td>
+                                <td>E0.85</td>
+                                <td>E1</td>
+                                <td>=</td>
+                                <td>$1.18</td>
+                            </tr>
+                        </table>
+                    </div>   
+                </div>
+                         
+                <div class="side-panel">
+                    <div class="form-wrapper">
+                        <div class="form"> 
+                            <h4 class="section-title">Currency Converter</h4>
+                            <div class="form__element">
+                                <label for="amount">Amount</label>
+                                <input type="text" id="amount" placeholder="1000">
+                            </div>
+                            <div class="form__element">
+                                <label for="from">Convert from</label>
+                                <select id="from">
+                                    <optgroup label="Popular Currencies">
+                                        <option value="aud">AUD - Australian Dollar</option>
+                                        <option value="brl">BRL - Brazilian Real</option>
+                                        <option value="cad">CAD - Canadian Dollar</option>
+                                    </optgroup>
+                                    <optgroup label="Other Currencies">
+                                        <option value="bsd">BSD - Bahamian Dollar</option>
+                                        <option value="htg">HTG - Haitian Gourde</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+        
+                            <div class="form__element">
+                                <label for="to">Convert to</label>
+                                <select id="to">
+                                <optgroup label="Popular Currencies">
+                                    <option value="aud">AUD - Australian Dollar</option>
+                                    <option value="brl">BRL - Brazilian Real</option>
+                                    <option value="cad">CAD - Canadian Dollar</option>
+                                </optgroup>
+                                <optgroup label="Other Currencies">
+                                    <option value="bsd">BSD - Bahamian Dollar</option>
+                                    <option value="htg">HTG - Haitian Gourde</option>
+                                </optgroup>
+                                </select>
+                            </div>
+                            <button>Convert</button>
+                        </div>
+                    </div>   
+                    
+                    <div class="datalist datalist--currency-exchange">
+                        <h4>Currency Exchange</h4>
+                        <div class="list-wrapper">
+                          <div class="list">
+                           <div class="card">
+                              <img src="../assets/united-states.svg">
+                              <div class="description">
+                                  <h5>USD</h5>
+                                  <p>United States Dollar</p>
+                              </div>
+                           </div>
+                           <div class="card">
+                            <img src="../assets/united-states.svg">
+                            <div class="description">
+                                <h5>USD</h5>
+                                <p>United States Dollar</p>
+                            </div>
+                         </div>
+                         <div class="card">
+                            <img src="../assets/united-states.svg">
+                            <div class="description">
+                                <h5>USD</h5>
+                                <p>United States Dollar</p>
+                            </div>
+                         </div>
+                         <div class="card">
+                            <img src="../assets/united-states.svg">
+                            <div class="description">
+                                <h5>USD</h5>
+                                <p>United States Dollar</p>
+                            </div>
+                         </div>                      
+                          </div>   
+                          <button>View all currencies</button>
+                        </div>                                        
+                    </div>
+                </div>
+            </div>
+        
+            <div class="footer">
+                <h3>Cenqo</h3>
+				<ul>				  
+				  <li>Home</li>
+				  <li>Converter</li>
+				  <li>About</li>
+                  <li>Privacy Policy</li>
+	     		</ul>	
+                <p>© 2021</p> 
+            </div>        
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script type="text/javascript" src="../js/main.js"></script>
+   </body>
+</html>
+
